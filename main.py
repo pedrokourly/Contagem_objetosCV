@@ -29,7 +29,10 @@ for cnt in contours:
 
 print(f'Objetos detectados: {contagem}')
 
-# 6. Exibir imagem
+# 6. Salvar a imagem da máscara
+cv2.imwrite('images/mask.png', morph)
+
+# 7. Exibir imagem
 cv2.imshow("Morph", morph)
 cv2.imshow("IMG", img)
 cv2.waitKey(0)  # Espera até apertar alguma tecla
