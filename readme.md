@@ -2,7 +2,7 @@
 
 | Máscara                | Moedas                 |
 |------------------------|------------------------|
-| ![Máscara](images/mask.jpg) | ![Moedas](images/moedas.png) |
+| ![Máscara](images/mask.png) | ![Moedas](images/moedas.png) |
 
 
 ## Descrição
