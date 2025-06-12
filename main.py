@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # 1. Carregar a imagem
-img = cv2.imread('images/moedas.png')
+img = cv2.imread('images/chocolates.jpg')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # 2. Binarizar (teste com Otsu direto ou adaptativa)
