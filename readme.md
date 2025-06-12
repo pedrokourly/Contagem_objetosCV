@@ -1,7 +1,9 @@
 # Aula: Contagem de Objetos em Imagens com OpenCV
 
-![Máscara](images/mask.png)
-![Moedas](images/moedas.jpg)
+| Máscara                | Moedas                 |
+|------------------------|------------------------|
+| ![Máscara](images/mask.jpg) | ![Moedas](images/moedas.png) |
+
 
 ## Descrição
 Esta aula apresenta uma atividade prática de Processamento Digital de Imagens utilizando a biblioteca OpenCV em Python para contagem de objetos (moedas) em uma imagem.
