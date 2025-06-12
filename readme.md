@@ -1,40 +1,35 @@
-    # 💡 Aula Prática: Contagem de Objetos com OpenCV
+# Aula: Contagem de Objetos em Imagens com OpenCV
 
-Esta atividade prática tem como objetivo aplicar técnicas de Processamento Digital de Imagens para **contar automaticamente objetos (moedas)** em uma imagem utilizando Python e a biblioteca OpenCV.
+## Descrição
+Esta aula apresenta uma atividade prática de Processamento Digital de Imagens utilizando a biblioteca OpenCV em Python para contagem de objetos (moedas) em uma imagem.
 
-## 📌 Objetivo
+O código realiza os seguintes passos principais:
+1. Carregamento da imagem colorida.
+2. Conversão para escala de cinza.
+3. Binarização automática usando o método de Otsu.
+4. Remoção de ruídos com operações morfológicas (abertura).
+5. Inversão da máscara binarizada para destacar os objetos (moedas).
+6. Detecção dos contornos dos objetos.
+7. Filtragem dos contornos por área mínima para eliminar ruídos.
+8. Desenho dos contornos na imagem original.
+9. Exibição da máscara e da imagem resultante com contornos desenhados.
+10. Impressão do número total de objetos detectados.
 
-Desenvolver uma aplicação capaz de:
-- Realizar o pré-processamento da imagem (conversão em tons de cinza, binarização, morfologia).
-- Detectar contornos dos objetos.
-- Contar e exibir visualmente os objetos detectados na imagem original.
+---
 
-## 🛠️ Tecnologias Utilizadas
+## Objetivos
+- Entender o fluxo básico de segmentação e análise de imagens.
+- Praticar técnicas de pré-processamento como binarização e operações morfológicas.
+- Utilizar a função `findContours` para identificar objetos em imagens binárias.
+- Aplicar filtros para considerar apenas objetos com área significativa.
+- Visualizar resultados com `imshow` e manipular janelas OpenCV.
 
-- Python 3
-- OpenCV
-- Google Colab (para visualização com `cv2_imshow`)
+---
 
-## 📸 Etapas do Código
+## Requisitos
+- Python 3.x
+- OpenCV (`opencv-python`)
 
-1. **Leitura e conversão para escala de cinza**
-2. **Binarização com Otsu**
-3. **Remoção de ruídos com morfologia matemática**
-4. **Inversão da imagem (moedas ficam brancas)**
-5. **Detecção e filtragem de contornos**
-6. **Desenho dos contornos e contagem de objetos**
-
-## ▶️ Como Executar
-
-1. Importe ou carregue uma imagem chamada `moedas.jpg` no seu ambiente Colab.
-2. Execute o código passo a passo.
-3. Verifique a saída visual (máscara + imagem com contornos).
-4. O número de objetos detectados será impresso no console.
-
-## 📝 Observações
-
-- A contagem funciona melhor com moedas **separadas**.
-- Para moedas **amontoadas**, considere estudar o uso do algoritmo **Watershed** para segmentação.
-
-## 📂 Estrutura do Projeto
-
+Instalação:
+```bash
+pip install opencv-python
